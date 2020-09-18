@@ -76,13 +76,16 @@
                                 <li class="breadcrumb-item"><a href="index.html">Closed</a></li>
                                 <li class="breadcrumb-item active">Tables</li>
                             </ol>
-                            <!-- <div class="card mb-4">
+                            <div class="card mb-4">
                                 <div class="card-body">
-                                   Las 
-                                    <a target="_blank" href="https://datatables.net/">official DataTables documentation</a>
+                                    <div class="container d-flex">
+                                        <div class="row">
+                                            <input  type="submit" value="RegistarPedido" />
+                                        </div>
+                                    </div>
                                     .
                                 </div>
-                            </div> -->
+                            </div> 
                             <div class="card mb-4" id="pedidos">
                                 <div class="card-header bg-secondary">
                                     <i class="fas fa-table mr-1"></i><b>
@@ -91,22 +94,8 @@
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         
-                                        <h:dataTable class="table table-bordered table-hover" value="#{usuarioController.usuario}" var="u">
-                                            <h:column>
-                                                <f:facet  name="header">ID</f:facet>
-                                                <h:outputText value="#{u.id}"/>
-                                            </h:column>
-                                            <h:column>
-                                                <f:facet name="header">Primer nombre</f:facet>
-                                                <h:outputText value="#{u.nombre1}"/>
-                                            </h:column>
-                                            
-                                            <h:column>
-                                                <f:facet name="header">Segundo Nombre</f:facet>
-                                                <h:outputText value="#{u.nombre2}"/>
-                                                </h:column> 
-                                            
-                                        </h:dataTable>
+                                        <ui:include src="../WEB-INF/includes/template/Tablas/tablaPedidos.xhtml"></ui:include>
+                                       
                                     
                                     </div>
                                 </div>
