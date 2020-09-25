@@ -10,30 +10,32 @@
                 
                 <div class="card">
                     <div class="card-body">
-                         <h:dataTable  class="table table-bordered table-hover" value="">
+                        <h:dataTable  class="table table-bordered table-hover"  value="#{usuarioscontroller.usuario}" var="u">
 
                     <h:column>
-                        <f:facet name="header"> Estado pedido </f:facet>
+                        <f:facet name="header"> State requested </f:facet>
                         <h:outputText value="Entregado"/>
                     </h:column>
                     <h:column>
-                        <f:facet name="header"> id  Repuesto </f:facet>
-                        <h:outputText value="2"/>
+                        <f:facet name="header">  id </f:facet>
+                        <h:outputText value="#{u.id}"/>
                     </h:column>
                     <h:column>
-                        <f:facet name="header"> Nombre Repuesto </f:facet>
-                        <h:outputText value="xxx"/>
+                        <f:facet name="header"> Nombres y apellidos </f:facet>
+                        <h:outputText value="#{u.nombre1}#{u.nombre2}#{u.apellido1}#{u.apellido2}"/>
                     </h:column>
                     <h:column>
-                        <f:facet name="header"> Cantidad Solicitada  </f:facet>
+                        <f:facet name="header">  
+Requested amount  </f:facet>
                         <h:outputText value="1"/>
                     </h:column>
                     <h:column>
-                        <f:facet name="header"> Fecha Solicitud </f:facet>
+                        <f:facet name="header"> 
+application date </f:facet>
                         <h:outputText value="06/07/2020"/>
                     </h:column>
                     <h:column>
-                        <f:facet name="header"> Valor Venta </f:facet>
+                        <f:facet name="header"> Sale Value </f:facet>
                         <h:outputText value="122"/>
                     </h:column>
                 </h:dataTable>
