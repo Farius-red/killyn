@@ -54,7 +54,7 @@
                             </div>
                         </ui:insert>
                         <ui:insert name="opc_menu3">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#stock1" aria-expanded="false" aria-controls="stock1">
+                            <!--<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#stock1" aria-expanded="false" aria-controls="stock1">
                                 <div class="sb-nav-link-icon font-weight-bold text-light"><i class="fas fa-cogs"></i> Stock Repuestos</div>
                                 <div class="sb-sidenav-collapse-arrow" style="color: #CF7D34"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -63,10 +63,10 @@
                                     <a class="nav-link text-light" href="#stock">Tabla de Stock de Repuestos</a>
                                     <a class="nav-link text-light" href="#pedidosModal" data-toggle="modal">Añadir Repuesto</a>
                                 </nav>
-                            </div>
+                            </div>-->
                         </ui:insert>
                         <ui:insert name="opc_menu4">
-                            <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#solicitudes1" aria-expanded="false" aria-controls="solicitudes1">
+                            <!--<a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#solicitudes1" aria-expanded="false" aria-controls="solicitudes1">
                                 <div class="sb-nav-link-icon font-weight-bold text-light"><i class="fas fa-plus"></i> Solicitud Orden de Compra Repuesto</div>
                                 <div class="sb-sidenav-collapse-arrow" style="color: #CF7D34"><i class="fas fa-angle-down"></i></div>
                             </a>
@@ -75,8 +75,10 @@
                                     <a class="nav-link text-light" href="#solicitudesCR">Tabla de Solictudes de Compra</a>
                                     <a class="nav-link text-light" href="#pedidosModal" data-toggle="modal">Generar Solicitud de Compra de Repuesto</a>
                                 </nav>
-                            </div>
+                            </div>-->
                         </ui:insert>
+                        <ui:insert name="opc_menu5"></ui:insert>
+                        <ui:insert name="opc_menu6"></ui:insert>
                     </div>
                 </nav>
             </div>
@@ -95,12 +97,12 @@
                     </div>
                 </main>
                 <ui:include src="/WEB-INF/includes/template/footer/footer_template.xhtml"></ui:include>
+                <ui:include src="/WEB-INF/includes/template/scripts/scripts_template.xhtml"></ui:include>
+                <ui:insert name="scripts_page"></ui:insert>
+                <ui:include src="/WEB-INF/includes/modals/modal_despachos.xhtml"></ui:include>
+                <ui:insert name="modal_page"></ui:insert>
             </div>
         </div>
-        <ui:include src="/WEB-INF/includes/template/scripts/scripts_template.xhtml"></ui:include>
-        <ui:insert name="scripts_page"></ui:insert>
-        <ui:include src="/WEB-INF/includes/modals/modal_despachos.xhtml"></ui:include>
-        <ui:insert name="modal_page"></ui:insert>
     </h:body>
 </html>
 
